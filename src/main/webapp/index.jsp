@@ -1,16 +1,17 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="slr.mvn.tsk01.MirrorCoat" %>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-   "http://www.w3.org/TR/html4/loose.dtd">
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE html>
 
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Test</title>
+        <title>Hola k ase</title>
     </head>
     <body>
-        <form action="index.jsp">
-            <input type="submit" value="Cuenta"> </button><%= MirrorCoat.getCounter() %>
+        Do want some of that.
+        <form action="util.php" method="post">
+            <input type="submit" value="crear" />
+            <input type="hidden" name="servlet" value="slr.mvn.tsk01.cnt.CuentaSvr" />
         </form>
     </body>
 </html>
