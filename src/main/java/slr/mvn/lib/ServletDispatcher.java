@@ -43,8 +43,10 @@ public class ServletDispatcher extends HttpServlet {
             try {
                 IServletExtension ext = (IServletExtension) Class.forName(request.getParameter("servlet")).newInstance();
                 ext.procesar(request, response, reqType, out);
-            } catch (ClassNotFoundException | InstantiationException | IllegalAccessException ex) {
+            } catch (IllegalAccessException ex) {
                 logger.log(Level.SEVERE, null, ex);
+            } catch(ClassNotFoundException | InstantiationException e){
+                out.println("This is not the page you wanted to see");
             }
         }
     }

@@ -8,10 +8,10 @@
         <title>Hola k ase</title>
     </head>
     <body>
-        Do want some of that.
+        <h1>Bienvenido al evento canino</h1>
         <form action="util.php" method="post">
-            <input type="submit" value="crear" />
-            <input type="hidden" name="servlet" value="slr.mvn.tsk01.cnt.CuentaSvr" />
+            <input type="submit" value="registrar" />
+            <input type="hidden" name="servlet" value="slr.mvn.tsk02.cnt.RegistroSvr" />
         </form>
     </body>
 </html>
