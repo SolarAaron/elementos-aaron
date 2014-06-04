@@ -12,5 +12,5 @@ import javax.servlet.http.HttpServletResponse;
 */
 public interface IServletExtension {
     public void procesar(HttpServletRequest request, HttpServletResponse response, RequestType req, PrintWriter out)
-        throws ServletException, IOException;
+        throws ServletException, IOException, ClassNotFoundException, InstantiationException, IllegalAccessException;
 }

@@ -1,27 +1,35 @@
-package slr.mvn.tsk02.mdl;
+package slr.mvn.tsk02.mdl.impl;
+
+import slr.mvn.tsk02.mdl.Mascota;
 
 /**
- * Yo dawg, herd u like dawgs
  * @author aaron
  */
-public class Perro {
+public class LLama implements Mascota{
     private String nombre;
 
     /**
      * @return the nombre
      */
-    public String getNombre() {
+    @Override
+    public String getNombre(){
         return nombre;
     }
 
     /**
      * @param nombre the nombre to set
      */
+    @Override
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
     
+    /**
+     *
+     * @return the register
+     */
+    @Override
     public String getRegister(){
-        return "Registrado: " + nombre;
+        return "Registrada llama: " + nombre;
     }
 }

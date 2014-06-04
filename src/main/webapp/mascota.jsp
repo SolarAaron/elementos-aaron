@@ -4,9 +4,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Registro perro</title>
+        <title>Registro mascota</title>
     </head>
     <body>
-        ${registro.getPerro().getRegister()}
+        ${registro.getMascota().getRegister()}
     </body>
 </html>

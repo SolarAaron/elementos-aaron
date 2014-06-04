@@ -5,19 +5,19 @@ package slr.mvn.tsk02.mdl;
  * @author aaron
  */
 public class Persona {
-    private Perro perro;
+    private Mascota mascota;
 
     /**
      * @return the perro
      */
-    public Perro getPerro() {
-        return perro;
+    public Mascota getMascota() {
+        return mascota;
     }
 
     /**
      * @param perro the perro to set
      */
-    public void setPerro(Perro perro) {
-        this.perro = perro;
+    public void setMascota(Mascota mascota) {
+        this.mascota = mascota;
     }
 }

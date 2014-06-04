@@ -47,6 +47,7 @@ public class ServletDispatcher extends HttpServlet {
                 logger.log(Level.SEVERE, null, ex);
             } catch(ClassNotFoundException | InstantiationException e){
                 out.println("This is not the page you wanted to see");
+                out.println(e.getMessage());
             }
         }
     }
