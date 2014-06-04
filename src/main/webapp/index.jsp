@@ -1,3 +1,4 @@
+<%@page import="java.util.ArrayList"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="slr.mvn.lib.Utility" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
@@ -11,10 +12,13 @@
     <body>
         <h1>Bienvenido al evento de mascotas</h1>
         <form action="util.php" method="post">
-            Especie: <select name="animal">
-                <c:forEach var="i" items="${Utility.getClasses("slr.mvn.tsk02.mdl.impl")}">
-                    <option value="<c:out value="${i}" />"><c:out value="${i}" /></option>
-                </c:forEach>
+            Especie: <select name="animal" id="animal">
+                <%
+                    ArrayList<String> cl = Utility.getClasses("slr.mvn.tsk02.mdl.impl");
+                    for(String sp: cl){
+                        out.println("<option value=" + sp + ">" + sp + "</option>");
+                    }
+                %>
             </select><br>
             Nombre: <input type="text" name="nombre"/><br>
             <input type="submit" value="Registrar mascota" />
